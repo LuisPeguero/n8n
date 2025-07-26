@@ -2,18 +2,6 @@
 ARG N8N_VERSION=latest
 FROM docker.n8n.io/n8nio/n8n:${N8N_VERSION}
 
-# Switch to root to install additional packages if needed
-USER root
-
-# Install additional system dependencies (uncomment as needed)
-# RUN apk add --no-cache \
-#     git \
-#     curl \
-#     wget \
-#     python3 \
-#     py3-pip
-
-
 # Set working directory
 WORKDIR /home/node
 
