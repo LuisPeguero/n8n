@@ -2,12 +2,6 @@
 ARG N8N_VERSION=latest
 FROM docker.n8n.io/n8nio/n8n:${N8N_VERSION}
 
-# Set working directory
-WORKDIR /home/node
-
-# Create directories for custom configurations
-RUN mkdir -p /home/node/.n8n/custom
-
 
 # Expose the n8n port
 EXPOSE 5678
